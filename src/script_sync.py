@@ -30,6 +30,12 @@ def data_consolidator(responses: list):
     return max_dict
 
 
-data_helper = DataHelper(DATA_SOURCES)
-responses = data_helper.get_member_data(1234)
-print(data_consolidator(responses))
+def main(member_id):
+    data_helper = DataHelper(DATA_SOURCES)
+    responses = data_helper.get_member_data(member_id)
+    result = data_consolidator(responses)
+    print(result)
+    return result
+
+
+main(1234)

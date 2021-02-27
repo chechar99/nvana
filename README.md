@@ -24,3 +24,8 @@ This is the asynchronous version of the script:
 ```shell script
 docker-compose exec nvana python src/script_async.py 
 ```
+
+To execute BDD end to end test inside of the container:
+```shell script
+docker-compose exec nvana behave
+```
