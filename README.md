@@ -18,3 +18,9 @@ Or you can run the tests
 ```shell script
 docker-compose exec nvana pytest
 ```
+
+
+This is the asynchronous version of the script:
+```shell script
+docker-compose exec nvana python src/script_async.py 
+```
